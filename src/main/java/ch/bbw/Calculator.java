@@ -7,9 +7,12 @@ package ch.bbw;
  */
 
 
-
 public class Calculator {
-    public int sum(int summand1, int summand2){
+    public int sum(int summand1, int summand2) {
         return summand1 + summand2;
+    }
+
+    public int subtraktion(int val1, int val2) {
+        return val1-val2;
     }
 }
