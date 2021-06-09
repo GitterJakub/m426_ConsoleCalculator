@@ -23,4 +23,14 @@ public class CalculatorTest {
     public void testDifferenzZweiPositiveisOK() {
         assertTrue(calculatorTest.subtraktion(50, 40) == 10);
     }
+
+    @Test
+    public void testSummeZweiNegativeisOK(){
+        assertTrue(calculatorTest.sum(-10, -33)== -43);
+    }
+
+    @Test
+    public void testDifferenzZweiNegativeisOK(){
+        assertTrue(calculatorTest.subtraktion(-20,-7)==-13);
+    }
 }
