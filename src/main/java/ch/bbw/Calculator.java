@@ -13,6 +13,10 @@ public class Calculator {
     }
 
     public int subtraktion(int val1, int val2) {
-        return val1-val2;
+        return val1 - val2;
     }
+    public double division(double dividend, double divisor){
+        return dividend/divisor;
+    }
+
 }
