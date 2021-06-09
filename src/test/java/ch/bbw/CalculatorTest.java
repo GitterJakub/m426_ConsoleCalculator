@@ -43,4 +43,16 @@ public class CalculatorTest {
     public void testDifferenzPositiveNegativeisOK() {
         assertTrue(calculatorTest.subtraktion(55, -19) == 74);
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivisondurchNullisExceptionExpected (){
+        calculatorTest.division(5,0);
+    }
+
+    @Test
+    public void testDivisondurchNullisExceptionUnexpected ()
+            throws ArithmeticException{
+            calculatorTest.division(10,5);
+    }
+
 }
