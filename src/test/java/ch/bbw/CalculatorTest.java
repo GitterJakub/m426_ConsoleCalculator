@@ -25,12 +25,22 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testSummeZweiNegativeisOK(){
-        assertTrue(calculatorTest.sum(-10, -33)== -43);
+    public void testSummeZweiNegativeisOK() {
+        assertTrue(calculatorTest.sum(-10, -33) == -43);
     }
 
     @Test
-    public void testDifferenzZweiNegativeisOK(){
-        assertTrue(calculatorTest.subtraktion(-20,-7)==-13);
+    public void testDifferenzZweiNegativeisOK() {
+        assertTrue(calculatorTest.subtraktion(-20, -7) == -13);
+    }
+
+    @Test
+    public void testSummePositveNegativeisOK() {
+        assertTrue(calculatorTest.sum(30, -14) == 16);
+    }
+
+    @Test
+    public void testDifferenzPositiveNegativeisOK() {
+        assertTrue(calculatorTest.subtraktion(55, -19) == 74);
     }
 }
