@@ -1,2 +1,11 @@
 language: java
 script: mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: g/xqQ+T8WcQITp35Cg9POgrBW12ykM1bGSr93XFMaDh1IWnOCWX6e/sKZvc8afo8Yswi6RRXYKoC5FcYu8cUXqNMna1NYy5/Iqs5lRbqcKsnRUl8H8FfH0LYB1ZVgDLrjHf4xSiMPsTRn3t7nukJNcyZRYxaflhq09NtjADaDU4akitK2sUhsXcLEW8ZspKSN4YYlYB6iQC+Nj5Pi6pvJk4CYDbjKqLM4bJlnBl2kofiY/wl8530WCfFEtqZ1Y9bncHX8ZZRWjM7J6YHdMP9N/Z6iljhlBnLXVbMgxyLmpm/AtLQhAw/2AahLH50V4Wj07Ls+oKk8pD1QFLWY293F5gMNkqpk9Als+0KIw81J1JJjhNkdHXJM54OrsXslSKI+6Z5z20KxFY+roQCA7fp3SVrZKdIztFomXP265AyTQxi0bMSHrzPwRWL1y2czHzvu51n54kaIk+ZEBhxK3NI9DQzRR6Ko0TUvAW85t0MzeAXHhJNzeDaV0DRqxoak3/dkKuNFJdXt6aejur1coTOOQ37xoQgUspy4W1WS+991FDM/ltzWqxIn8mFkTg3sFZJ6tfu1daADMeXH0eXYuy1fB3xbfXTeimVCTBuuet8fIura5MVFGB3iqDkXWFQTjGmUPYDGcPSPBiXh0FBmSFZTXFfQqQa1UegJAVZA1pLnAk=
+  file:
+    "/home/travis/.m2/repository/ch/bbw/m426_ConsoleCalculator/1.0-SNAPSHOT/m426_ConsoleCalculator-1.0-SNAPSHOT.jar"
+  skip_cleanup: true
+  on:
+    tags: true
