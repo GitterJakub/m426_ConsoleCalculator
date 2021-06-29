@@ -20,8 +20,8 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testDifferenzZweiPositiveisOK() {
-        assertTrue(calculatorTest.subtraktion(50, 40) == 10);
+    public void testSummePositveNegativeisOK() {
+        assertTrue(calculatorTest.sum(30, -14) == 16);
     }
 
     @Test
@@ -30,14 +30,15 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDifferenzZweiPositiveisOK() {
+        assertTrue(calculatorTest.subtraktion(50, 40) == 10);
+    }
+
+    @Test
     public void testDifferenzZweiNegativeisOK() {
         assertTrue(calculatorTest.subtraktion(-20, -7) == -13);
     }
 
-    @Test
-    public void testSummePositveNegativeisOK() {
-        assertTrue(calculatorTest.sum(30, -14) == 16);
-    }
 
     @Test
     public void testDifferenzPositiveNegativeisOK() {
@@ -45,14 +46,14 @@ public class CalculatorTest {
     }
 
     @Test(expected = ArithmeticException.class)
-    public void testDivisondurchNullisExceptionExpected (){
-        calculatorTest.division(5,0);
+    public void testDivisondurchNullisExceptionExpected() {
+        calculatorTest.division(5, 0);
     }
 
     @Test
-    public void testDivisondurchNullisExceptionUnexpected ()
-            throws ArithmeticException{
-            calculatorTest.division(10,5);
+    public void testDivisondurchNullisExceptionUnexpected()
+            throws ArithmeticException {
+        calculatorTest.division(10, 5);
     }
 
 }
